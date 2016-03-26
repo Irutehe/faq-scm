@@ -1,0 +1,3 @@
+emag_scm_faq_homepage:
+    path:     /
+    defaults: { _controller: EmagScmFaqBundle:Default:index }

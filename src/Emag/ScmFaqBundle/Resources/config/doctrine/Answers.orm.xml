@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Emag\ScmFaqBundle\Entity\Answers" table="answers">
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="answer" type="text" column="answer" nullable="false"/>
+    <field name="votedUp" type="smallint" column="voted_up" nullable="false"/>
+    <field name="votedDown" type="smallint" column="voted_down" nullable="false"/>
+    <field name="responseByUserId" type="integer" column="response_by_user_id" nullable="true"/>
+    <field name="created" type="datetime" column="created" nullable="false"/>
+    <field name="modified" type="datetime" column="modified" nullable="false"/>
+  </entity>
+</doctrine-mapping>
