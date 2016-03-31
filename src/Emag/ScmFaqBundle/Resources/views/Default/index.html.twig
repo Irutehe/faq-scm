@@ -1,1 +1,31 @@
-Hello, this will be the best Faq Bundle for Symfony :)
+{% extends '::base.html.twig' %}
+{% block content %}
+<form class="form-horizontal pull-right">
+    <fieldset>
+        <legend>Faq</legend>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="viewButton">View</label>
+            <div class="col-md-4">
+                <button id="viewButton" name="viewButton" class="btn btn-info">View</button>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="addButton">Add</label>
+            <div class="col-md-4">
+                <button id="addButton" name="addButton" class="btn btn-success">Add</button>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="searchInput">Search</label>
+            <div class="col-md-2">
+                <input id="searchInput" name="searchInput" placeholder="problem" class="form-control input-md" type="search">
+                <p class="help-block">search for your problem</p>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+{% endblock %}
